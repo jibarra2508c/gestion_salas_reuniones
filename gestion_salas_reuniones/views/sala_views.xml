@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Vista lista de salas -->
+    <record id="view_sala_tree" model="ir.ui.view">
+        <field name="name">gestion.salas.sala.tree</field>
+        <field name="model">gestion.salas.sala</field>
+        <field name="arch" type="xml">
+            <tree string="Salas">
+                <field name="nombre"/>
+                <field name="planta"/>
+                <field name="descripcion"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vista formulario de salas -->
+    <record id="view_sala_form" model="ir.ui.view">
+        <field name="name">gestion.salas.sala.form</field>
+        <field name="model">gestion.salas.sala</field>
+        <field name="arch" type="xml">
+            <form string="Sala">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="nombre"/>
+                        <h1>
+                            <field name="nombre" placeholder="Nombre de la sala..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <field name="planta"/>
+                    </group>
+                    <notebook>
+                        <page string="Descripción">
+                            <field name="descripcion" placeholder="Descripción de la sala..."/>
+                        </page>
+                        <page string="Reuniones">
+                            <field name="reunion_ids">
+                                <tree>
+                                    <field name="nombre"/>
+                                    <field name="fecha_inicio"/>
+                                    <field name="asientos"/>
+                                    <field name="asientos_ocupados" widget="progressbar"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Acción de ventana para Salas -->
+    <record id="action_sala" model="ir.actions.act_window">
+        <field name="name">Salas</field>
+        <field name="res_model">gestion.salas.sala</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crea una nueva sala de reuniones
+            </p>
+            <p>
+                Aquí podrás gestionar las salas de reuniones de la empresa.
+            </p>
+        </field>
+    </record>
+
+</odoo>

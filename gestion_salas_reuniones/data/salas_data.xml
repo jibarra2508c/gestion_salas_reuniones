@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Sala A: sala principal en planta 0 -->
+        <record id="sala_a" model="gestion.salas.sala">
+            <field name="nombre">Sala A</field>
+            <field name="descripcion">Sala de reuniones principal.</field>
+            <field name="planta">0</field>
+        </record>
+
+        <!-- Sala B: sala secundaria en planta 1 -->
+        <record id="sala_b" model="gestion.salas.sala">
+            <field name="nombre">Sala B</field>
+            <field name="descripcion">Sala de reuniones secundaria.</field>
+            <field name="planta">1</field>
+        </record>
+
+        <!-- Sala C: sala del equipo directivo en planta 2 -->
+        <record id="sala_c" model="gestion.salas.sala">
+            <field name="nombre">Sala C</field>
+            <field name="descripcion">Sala de reuniones del equipo directivo.</field>
+            <field name="planta">2</field>
+        </record>
+
+    </data>
+</odoo>

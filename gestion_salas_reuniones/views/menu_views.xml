@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Menú principal: visible solo para los integrantes del grupo Reuniones -->
+    <menuitem
+        id="menu_gestion_salas_root"
+        name="Gestión de salas de reuniones"
+        sequence="10"
+        groups="gestion_salas_reuniones.group_reuniones"/>
+
+    <!-- Submenú: Salas -->
+    <menuitem
+        id="menu_salas"
+        name="Salas"
+        parent="menu_gestion_salas_root"
+        action="action_sala"
+        sequence="10"
+        groups="gestion_salas_reuniones.group_reuniones"/>
+
+    <!-- Submenú: Reuniones -->
+    <menuitem
+        id="menu_reuniones"
+        name="Reuniones"
+        parent="menu_gestion_salas_root"
+        action="action_reunion"
+        sequence="20"
+        groups="gestion_salas_reuniones.group_reuniones"/>
+
+</odoo>
