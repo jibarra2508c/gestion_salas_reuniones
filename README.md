@@ -41,6 +41,3 @@ Dependencias: `base`. Licencia: LGPL-3.
 ## Documentación
 
 En la carpeta [`docs/`](docs/) están la documentación técnica del módulo y el manual de usuario.
-
----
-Autores: **Javier Ibarra** · Sergi Oliver
