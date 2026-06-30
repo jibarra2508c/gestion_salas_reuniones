@@ -1,6 +1,6 @@
 # Gestión de Salas de Reuniones — Módulo Odoo
 
-Módulo de **Odoo** para gestionar las salas de reuniones de una empresa y las reuniones que se celebran en ellas. Desarrollado como práctica de la asignatura, en pareja (Javier Ibarra · Sergi Oliver).
+Módulo de **Odoo** para gestionar las salas de reuniones de una empresa y las reuniones que se celebran en ellas.
 
 ## Funcionalidades
 
